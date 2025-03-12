@@ -1,0 +1,13 @@
+.product_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+
+}
+@media screen and (max-width:768px) {
+    /* *{
+        -webkit-column-rule-width: none;
+    }
+     */
+}

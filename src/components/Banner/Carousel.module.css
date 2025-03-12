@@ -1,0 +1,21 @@
+.bannerFade{
+    position:relative;
+}
+.bannerFade::before{
+    content: '';
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to bottom, rgba(225,225,225,0) , rgba(255, 255, 255) );
+    position: absolute;
+    bottom: 0px;
+}
+@media  screen and (max-width: 768px){
+    .bannerFade::before{
+        height: 25vh;
+    }
+    .cimg img{
+        height: 60vh;
+    }
+
+    
+}

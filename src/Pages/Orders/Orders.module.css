@@ -1,0 +1,32 @@
+.container{
+    background-color: rgb(228, 230, 232);
+    padding: 29px;
+    
+}
+
+.order{
+    background-color: white;
+    padding: 13px;
+    width: 100%;
+}
+.order h2{
+    border-bottom: 2px solid rgba(244, 171, 35, 0.756);
+    padding: 9px;
+}
+.order img{
+    width: 100px !important;
+    margin: 0;
+    padding-inline: 20px;
+
+    
+}
+.order div{
+    height: auto !important;
+
+}
+.order_div{
+    height: auto ;
+}
+.order_div{
+    padding-bottom: 30px;
+}

@@ -1,0 +1,153 @@
+.productSlice {
+    height: 64vh;
+    width: 200px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productSlice:hover {
+    transform: scale(1.05);
+}
+
+.imageProduct img {
+    width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.addCart {
+    display: none;
+}
+
+.productSlice:hover .addCart {
+    display: block;
+}
+
+.addCart {
+    width: 100%;
+    background-color: #ffd814;
+    border: none;
+    padding: 4px;
+    font-size: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.addCart:hover {
+    background-color: #f7ca00;
+}
+
+/* Fix grid layout for product page */
+.productWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Detail Page */
+.productDetail {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+
+    box-shadow: none;
+}
+
+.productDetail .imageProduct img {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.productInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.productInfo h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    text-align: left;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #b12704;
+    text-align: left;
+    margin-left: 102px;
+}
+
+.description {
+    display: none;
+}
+
+.productDetail .description {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    overflow: hidden;
+}
+
+.buyNow {
+    width: 200px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buyNow:hover {
+    background-color: #db9224;
+}
+.noCart{
+    display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .productDetail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productDetail .imageProduct img {
+        width: 300px;
+        
+    }
+    .description{
+        width: 400px;
+
+    }
+    .productInfo {
+        align-items: flex-start;
+    }
+
+    .productDetail .description {
+        text-align: left;
+        
+    }
+}

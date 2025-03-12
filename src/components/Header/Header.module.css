@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerWrapper {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 14vh;
+    align-items: center;
+    width: 100%;  
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.imageAmazon img {
+    width: 100px;
+    margin: 23px;
+    padding-top: 10px;
+}
+
+.delivery {
+    display: flex;
+    font-size: 12px;
+    color: rgb(219, 217, 217);
+    align-items: center;
+    gap: 5px;
+}
+
+.delivery span {
+    font-weight: 600;
+    color: white;
+    font-size: 17px; 
+}
+
+.SearchaBar {
+    display: flex;
+    height: 45px;
+    flex-grow: 0.6;
+    margin: 0 30px;
+    border-radius: 4px;
+ 
+}
+
+.SearchaBar select {
+    padding: 0 5px;
+    border: none;
+    color: black; 
+    background-color: rgb(228, 220, 220);
+    border-radius: 5px 0 0 5px;
+ 
+}
+
+.SearchaBar input {
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0 10px;
+   
+}
+.searchButton{
+    padding: 8px;
+    border: none;
+    
+   
+    border-radius: 0px 12px 12px 0 ;
+}
+.SearchaBar span {
+    background-color: rgb(233, 198, 134);
+    color: black;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.order_wrapper {
+    display: flex;
+    gap: 15px;
+    height: 10vh;
+    align-items: center;
+}
+
+.order_wrapper a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 14px;
+    height: fit-content;
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 8px;
+}
+
+.lang img {
+    width: 20px;
+}
+
+.account p, .returns p {
+    color: rgb(215, 211, 211);
+    font-size: 13px;
+}
+
+.account select {
+    border: none;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Fixed Cart Styles */
+.cart {
+    position: relative;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart span {
+    position: absolute;
+    top: 0;
+    left: 32%;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(217, 165, 98);
+    background-color: black;
+    padding: 0 5px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.cart p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.cart:hover, .order_wrapper a:hover, .lang:hover, .account:hover, .returns:hover {
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.headerUnder ul {
+    display: flex;
+    background-color: #232f3e;
+    color: white;
+    height: 6vh;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.headerUnder a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.headerUnder ul li:first-child {
+    display: flex;  
+    gap: 2px;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.headerUnder ul li:hover {
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.headerUnder ul li:first-child:hover {
+    border: none;
+}
+
+.fixed {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .headerWrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .imageAmazon img {
+        margin: 10px 0;
+    }
+
+    .delivery {
+        display: none;
+    }
+
+    .SearchaBar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .order_wrapper {
+        width: 100%;
+        justify-content: space-between;
+        margin: 10px 0;
+    }
+
+    .cart span {
+        left: 55%;
+        top: -4px;
+        font-size: 14px;
+    }
+
+    .cart p {
+        font-size: 12px;
+    }
+
+    .headerUnder ul li:not(:first-child) {
+        display: none;
+    }
+}

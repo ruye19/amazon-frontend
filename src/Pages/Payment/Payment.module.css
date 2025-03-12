@@ -1,0 +1,89 @@
+
+.checkoutheader {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 17px;
+    background-color: rgb(224, 223, 223);
+}
+.sectionPayment{
+   padding: 20px 20px 20px 0px;
+
+}
+.flexx{
+    display: flex;
+    margin: 12px;
+    padding:auto;
+    margin-bottom:30px ;
+   
+}
+.flexx h3{
+    padding-right: 123px;
+     font-weight: 700;
+     font-size: 20px;
+     padding-left:10pxpx ;
+
+}
+.flexx img{
+    width: 100px !important;
+}
+.flexx div{
+    height: auto !important;
+  
+
+}
+
+.card_payment{
+    max-width: 340px;
+    width: 100%;
+}
+.card_pay_now{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.card_pay_now button{
+    padding: 4px;
+    
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 100px;
+}
+.card_pay_now button:hover{
+    background-color: rgb(183, 146, 76);
+}
+.flexx h4{
+    margin-right: 250px;
+    font-size: 20px;
+}
+@media  screen and (max-width: 768px) {
+
+    .flexx h3{
+        padding: 0;
+        margin: 0;
+    }
+    .sectionPayment{
+        padding: 18px;
+        flex-direction: column;
+      
+    }
+    .flexx h4{
+  margin:0 ;
+  display: block;
+  flex-direction: column;
+    }
+    .flexx hr{
+        visibility: hidden;
+    }
+    .flexx  div {
+        padding: 12px;
+    }
+    .flexx{
+        flex-wrap: wrap;
+    }
+    *{
+        overflow-x: hidden;
+    }
+}

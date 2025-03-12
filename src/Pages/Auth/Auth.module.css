@@ -1,0 +1,71 @@
+.imgClass img{
+    width: 100px;
+    margin: 30px auto;
+    object-fit: contain;
+}
+.imgClass{
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+}
+.signIn{
+    height: auto;
+    width: 300px;
+    border: 1px solid black;
+    box-shadow:  8px 7px rgb(233, 226, 205), 5px 6px rgb(235, 228, 206);
+    margin: 0 auto;
+    padding: 29px;
+    border-radius: 8px;
+
+}
+.signIn h1{
+    margin-inline:90px;
+}
+form label{
+    width: 100%;
+    font-size: 20px;  
+}
+form input{
+    width: 98%;
+    padding: 7px;
+    border-radius:5px ;
+}
+form input:hover{
+    border: 2px solid  black;
+    background-color: rgb(230, 220, 201);
+    
+   
+}
+form input:focus{
+    background-color: rgb(230, 220, 201);
+}
+.btn1{
+    width: 100%;
+    margin: 8px;
+    padding: 9px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: rgb(136, 96, 21);
+
+}
+.btn2{
+    width: 100%;
+    margin: 8px;
+    padding: 10px;
+    
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+.btn2:hover{
+    background-color: rgb(136, 96, 21);
+    color: white;
+}
+.signIn p{
+    text-align: left;
+    width: 100%;
+}
