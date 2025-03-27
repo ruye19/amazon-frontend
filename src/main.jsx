@@ -12,3 +12,7 @@ createRoot(document.getElementById('root')).render(
    
   </StrictMode>,
 )
+//frontend deployment domain
+//https://amazon-frontend-fawn.vercel.app/
+//backend deployment domain
+//https://amazon-api-yuos.onrender.com/
